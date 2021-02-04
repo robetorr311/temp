@@ -1,0 +1,28 @@
+.nav {
+ 		justify-content: flex-end;
+ 		.navbar-nav {
+ 			flex-direction: row;
+ 			align-items: center;
+ 			padding-right: 40px; 
+ 			li {
+ 				margin-right: 40px;
+ 				a {
+ 					font-family: $base-font-serif;
+ 				}
+ 				.sub-link{
+ 					color: #999999;
+ 					margin-left: 5px;
+ 				}
+ 				.separator {
+ 					color: #fff;
+ 					margin-left: 5px;
+ 				}
+ 				.link-icon {
+ 					margin-right: 4px;
+ 				}
+ 				&:last-child {
+ 					margin-right: 0;
+ 				}
+ 			}
+ 		}
+ 	}

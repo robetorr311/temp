@@ -1,0 +1,75 @@
+
+
+$black: #211d27;
+$white: #fff;
+$red: #ec4d53;
+$yellow: #fecc00;
+$purple: #39314a;
+$brown: #813846;
+
+$green-blue: #15a9ab;
+$blue: #3192cc;
+
+
+
+$base-font-sans-serif: 'Ubuntu', sans-serif;
+$secondary-font-sans-serif: 'Bellaboo', sans-serif;
+$base-font-serif: 'MyriadPro', serif;
+
+// Body
+$base-text-color: $black !default;
+$base-background-color: $white !default;
+$font-size-base: 16px !default;
+$line-height-base: 1.2 !default;
+$base-font-family: $base-font-sans-serif !default;
+
+$vertical-rhythm: ($line-height-base * 1em);
+
+$base-min-width: 320px;
+
+// Liks
+$base-link-color: $white;
+
+// Buttons 
+$btn-color: $white !default;
+$btn-background: $red !default;
+$btn-padding: 0.4em 0.7em !default;
+$btn-font-size: inherit !default;
+
+// Forms
+$form-element-padding: $btn-padding !default;
+$form-element-border-color: $black !default;
+$form-element-focus-border-color: $black !default;
+$placeholder-color: #666666 !default;
+$checkbox-color: $black !default; 
+
+// Headers
+$h1-font-size: 60px !default;
+$h2-font-size: 40px !default;
+$h3-font-size: 30px !default;
+$h4-font-size: 20px !default;
+$h5-font-size: 16px !default;
+$h6-font-size: 20px !default;
+
+$headings-font-family: inherit !default;
+$headings-color: inherit !default;
+
+$trs: 0.3s;
+
+// Breakpoints
+$breakpoints: (
+        'small-mobile' : (max-width: 380px),
+        'mobile' : (max-width: 480px),
+        'middle-mobile' :(max-width: 540px),
+        'large-mobile': (max-width: 640px),
+        'xs' : (max-width: 767px),
+        'small' : (max-width: 991px),
+        'tablet' : (max-width: 1199px),
+        'large-tablet': (max-width: 1280px),
+        'laptop' : (max-width: 1366px),
+        'large-laptop' : (max-width: 1440px)
+) !default;
+
+//Transition
+$fTrans: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+$twoTrans: cubic-bezier(0.19, 1, 0.22, 1);

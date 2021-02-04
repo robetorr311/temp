@@ -1,0 +1,530 @@
+.landing{
+  #header-screen{
+    padding-top: 85px;
+    z-index: 1;
+    background: linear-gradient(to right, rgba(58, 49, 74, 1), rgba(0, 83, 85, 0.9)), url(../img/landing/p35-bg.png) center no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+  }
+
+  @mixin section-text($color) {
+    .totem-top-headline, .totem-sub-headline, .totem-description, .link-block .link-text p a{
+      color: $color;
+    }
+  }
+
+  @media screen and (min-width: 1200px){
+    .container {
+      max-width: 960px;
+    }
+  }
+
+  a{
+    display: inline-block;
+  }
+
+  .header{
+    padding: 15px 0;
+
+    .left-side {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .header-items{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        .header-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          &:not(:last-child){
+            margin-right: 50px;
+          }
+          .main-text{
+            font-family: 'Ubuntu';
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            line-height: 1;
+
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+          .sub-text{
+            font-family: 'Ubuntu';
+            font-size: 12px;
+            font-weight: normal;
+            color: #ffffff;
+            line-height: 1;
+            margin-bottom: 10px;
+            opacity: 0.85;
+          }
+        }
+      }
+    }
+    .right-side{
+      .nav .navbar-nav li .link-icon, .nav .navbar-nav li .link{
+        display: block;
+        text-align: center;
+      }
+      .nav .navbar-nav {
+        padding-right: 0;
+
+        li .link{
+          font-family: 'Ubuntu';
+          font-size: 12px;
+          font-weight: normal;
+          color: #ffffff;
+          line-height: 1;
+          margin-bottom: 15px;
+          opacity: 0.85;
+        }
+      }
+      .nav .navbar-nav .nav-item{
+        margin-right: 15px;
+        .link-icon{
+          height: 20px;
+        }
+      }
+      .nav-item__user .dropdown-toggle:after{
+        display: none;
+      }
+      .language-menu .btn{
+        font-family: 'Myriad Pro';
+        font-size: 16px;
+        font-weight: normal;
+        color: white;
+        line-height: 1;
+        background-color: rgba(0, 0, 0, 0.15);
+        padding: 12px;
+      }
+    }
+  }
+
+  //sections
+
+  .hero{
+    padding: 60px 0 200px;
+
+    .container{
+      margin-top: 60px;
+    }
+
+    .hero-headline{
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 43px;
+      font-family: 'Ubuntu';
+      color: #ffffff;
+
+      margin-bottom: 25px;
+    }
+    .hero-description{
+      font-weight: normal;
+      font-size: 16px;
+      font-family: 'Ubuntu';
+      color: #abb4ba;
+      margin-bottom: 40px;
+    }
+    .sub-description{
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 35px;
+      font-family: 'Ubuntu';
+      color: #ffffff;
+    }
+    .button-col{
+      display: flex;
+      align-items: center;
+    }
+    .button-35{
+      font-size: 18px;
+    }
+  }
+
+  .image-section{
+    height: 150px;
+    background-color: #f9f9f9;
+    position: relative;
+
+    .image-col{
+      display: flex;
+      justify-content: center;
+
+      position: absolute;
+      bottom: 30px;
+      left: 55%;
+      z-index: 11;
+      transform: translate(-50%);
+
+      img{
+        width: 790px;
+        height: auto;
+      }
+    }
+  }
+
+  .totem-solo{
+    background-image: url("../img/landing/totem-solo-bg.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding: 40px 0;
+
+
+    @include section-text($green-blue);
+  }
+
+  .totem-enterprise{
+    background-color: #f9f9f9;
+    background-image: url("./../img/landing/totem-enterprise-bg.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 100px 0;
+    background-size: 48%;
+
+    @include section-text($blue);
+
+    .enterprise-column{
+      padding-right: 0;
+
+      .link-block .link-text p{
+        padding-left: 25px;
+      }
+      .link-block .button-35{
+        padding: 5px 30px;
+      }
+    }
+  }
+
+  .methode{
+    background-color: $green-blue;
+    padding: 130px 0;
+
+    .row{
+      display: flex;
+      align-items: center;
+
+      .video{
+        width: 100%;
+        height: 250px;
+      }
+      .button-35{
+        color: $green-blue;
+        padding: 5px 40px;
+      }
+
+      @include section-text(white)
+    ;
+      .totem-top-headline{
+        margin-bottom: 0;
+      }
+      .totem-sub-headline{
+        font-weight: bold;
+      }
+      .totem-description{
+        font-weight: 300;
+      }
+    }
+  }
+
+  .totem-groupe{
+    padding-top: 80px;
+    .image-col{
+      img{
+        height: 500px;
+        width: auto;
+      }
+    }
+
+    @include section-text($green-blue);
+  }
+
+  .totem-amoureux{
+    background-color: #f9f9f9;
+    background-image: url("./../img/landing/totem-amourex-bg.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding: 130px 0;
+    background-size: 55%;
+
+    @include section-text($red);
+  }
+
+  .boutique{
+    padding: 70px 0 150px;
+    .square-totem.package{
+      background-image: url("../img/landing/green-bg.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      position: relative;
+
+      .headline{
+        color: white;
+      }
+      .description{
+        color: #fefefe;
+      }
+      .button-35{
+        margin-top: 125px;
+        padding: 5px 40px;
+      }
+      .package-image{
+        position: absolute;
+        bottom: -80px;
+        right: -30px;
+      }
+    }
+    .square-totem.mug{
+      .headline{
+        color: #211d27;
+      }
+      .description{
+        color: #515254;
+      }
+      .red-text{
+        color: $red;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Ubuntu';
+        margin-top: 35px;
+        display: inline-block;
+      }
+      .mug-image {
+        position: absolute;
+        bottom: -80px;
+        left: 44%;
+        transform: translate(-50%);
+      }
+    }
+    .square-totem{
+      padding: 30px 0;
+      .headline{
+        font-weight: bold;
+        font-size: 38px;
+        font-family: 'Ubuntu';
+        margin-bottom: 20px;
+      }
+      .description{
+        font-weight: normal;
+        font-size: 16px;
+        font-family: 'Ubuntu';
+      }
+      .inner-col{
+        position: static;
+      }
+    }
+  }
+
+  .landing-footer{
+    background:  linear-gradient(to right, #39314a, #174f70);
+    .footer-inner{
+      display: flex;
+      justify-content: space-between;
+      padding: 60px 0 80px;
+
+      .footer-headline{
+        font-weight: bold;
+        font-size: 18px;
+        font-family: 'Ubuntu';
+        color: #ffffff;
+      }
+      .box {
+        padding-bottom: 30px;
+        ul{
+          display: flex;
+          justify-content: flex-start;
+        }
+      }
+      .box:not(.social) ul li{
+        margin: 0;
+        padding: 0;
+
+        a{
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 30px;
+          font-family: 'Ubuntu';
+          color: #abb0b9;
+        }
+        &:not(:last-child):after{
+          content: ' - ';
+          display: inline-block;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 30px;
+          font-family: 'Ubuntu';
+          color: #abb0b9;
+          margin: 0 15px;
+        }
+      }
+      .social ul li{
+        padding: 0;
+        margin: 20px 0 0;
+        .fa{
+          font-size: 22px;
+          display: block;
+          color: #abb0b9;
+        }
+        &:not(:last-child){
+          margin-right: 20px;
+        }
+      }
+      .hibou{
+        margin-top: 15px;
+      }
+    }
+    .sub-footer{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 60px;
+      background-color: rgba(0, 0, 0, 0.05);
+
+      .footer-element {
+        margin: 0;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 30px;
+        font-family: 'Ubuntu';
+        color: #abb0b9;
+
+        &:not(:last-child):after {
+          content: ' - ';
+          display: inline-block;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 30px;
+          font-family: 'Ubuntu';
+          color: #abb0b9;
+          margin: 0 20px;
+        }
+      }
+    }
+  }
+  //end sections
+
+  //components
+
+  .yellow-text{
+    background-color: #fecc00;
+    color: white;
+    font-weight: normal;
+    font-size: 8px;
+    font-family: 'Myriad Pro';
+    padding: 7px 10px 3px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    letter-spacing: 1.5px;
+  }
+
+  .totem-top-headline{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 35px;
+    font-family: 'Ubuntu';
+    text-transform: uppercase;
+  }
+
+  .totem-headline{
+    color: black;
+    font-weight: bold;
+    line-height: 1;
+    font-size: 40px;
+    font-family: 'Ubuntu';
+  }
+
+  .totem-sub-headline{
+    font-weight: 300;
+    font-size: 40px;
+    font-family: 'Ubuntu';
+    margin-bottom: 20px;
+    line-height: 1;
+  }
+
+  .totem-description{
+    font-weight: normal;
+    font-size: 14px;
+    font-family: 'Ubuntu';
+    margin-bottom: 35px;
+  }
+
+  .dollar{
+    margin-bottom: 25px;
+  }
+
+  .link-block{
+    display: flex;
+    align-items: center;
+
+    .link-text p{
+      padding-left: 30px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1;
+      font-family: 'Ubuntu';
+      &:not(:last-child){
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .button-35{
+    border-radius: 30px;
+    padding: 15px 40px;
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 35px;
+    font-family: 'Ubuntu';
+  }
+
+  .link-block{
+    .button-35{
+      padding: 5px 40px;
+    }
+  }
+
+
+  .green-blue-button{
+    background-color: $green-blue;
+
+    &:hover {
+      background-color: #108082;
+    }
+  }
+  .blue-button{
+    background-color: $blue;
+
+    &:hover{
+      background-color: #227aaf;
+    }
+  }
+  .white-button{
+    background-color: white;
+
+    &:hover{
+      background-color: #dee2e6;
+    }
+  }
+
+
+  //end components
+
+  @media screen and (min-width: 1200px){
+    //background fix for big screens
+    .totem-amoureux, .totem-enterprise{
+      background-size: unset;
+    }
+    .totem-enterprise {
+      background-position: left 25px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.btn {
+	background: $red;
+	color: $white;
+	border: none;
+
+	&:hover {
+		background: $brown;
+		color: $white;
+	}
+}
+.btn--big {
+	border-radius: 30px;
+	padding: 20px 40px;
+	font-size: 18px;
+}
+.btn--sm {
+	border-radius: 21px;
+	padding: 15px 30px;
+	font-size: 16px;
+}
+
+.btn__social_fb {
+	border-radius: 50%;
+	width: 53px;
+	height: 53px;
+	background-color: #3d5b94;
+	.fa {
+		font-size: 30px;
+		padding-top: 7px;
+	}
+}

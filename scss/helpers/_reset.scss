@@ -1,0 +1,140 @@
+*::-webkit-input-placeholder {
+  color: $placeholder-color;
+  opacity: 1;
+}
+*:-moz-placeholder {
+  color: $placeholder-color;
+  opacity: 1;
+}
+*::-moz-placeholder {
+  color: $placeholder-color;
+  opacity: 1;
+}
+*:-ms-input-placeholder {
+  color: $placeholder-color;
+  opacity: 1;
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  max-height: 1000000px;
+}
+
+body {
+  color: $base-text-color;
+  background: $base-background-color;
+  font: #{$font-size-base}/#{$line-height-base} $base-font-family;
+  min-width: $base-min-width;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  //@include ls(50);
+  font-weight: 400;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+// adaptive images
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// google map fix
+.gm-style img {
+  max-width: none
+}
+
+
+input, textarea, select {
+  font-family: $headings-font-family;
+  appearance: none;
+  border-radius: 0;
+}
+
+
+
+input:focus , input , .form-control , select{
+  outline: 0;
+  background-color: #ffffff;
+  border: solid 1px #999999;
+  font-size: 18px; 
+  border-radius: 0;
+  font-family: $base-font-serif;
+}
+input:focus , input:active {
+  background-color: #f1f1f1;
+}
+
+
+
+
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+/* ----------- COMMON STYLES -------- */
+
+
+
+section {
+  position: relative;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.main-wrap {
+ position: relative;
+ overflow: hidden;
+ min-height: 100%; 
+}
+
+
+
+.section__title {
+  text-align: center;
+}
+
+
+
+.bootstrap-select.btn-group .dropdown-menu.inner {
+  display: block;
+}
+.bootstrap-select.btn-group .dropdown-menu li a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+} 

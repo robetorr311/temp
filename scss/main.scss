@@ -1,0 +1,51 @@
+/*
+ * Yura Poritskii
+ * Copyright 2018 (https://github.com/yuraporitskii/)
+ */
+
+//layout 
+@import 'layout/_grid';
+
+//base
+@import 'base/_variables';
+
+
+//helpers
+@import 'helpers/_mixin';
+@import 'helpers/_normalize';
+@import 'helpers/_reset';
+
+
+@import 'base/_typography';
+
+//plugins 
+@import 'plugins/_font-awesome.scss';
+
+
+@import 'layout/_header';
+@import 'layout/_sidebar';
+@import 'layout/_footer';
+
+//component
+@import 'components/_btn';
+@import 'components/_nav';
+@import 'components/_checkbox';
+@import 'components/_form';
+@import 'components/_modal';
+//@import 'components/_pagination';
+// @import 'components/_breadcrumbs';
+
+//pages
+@import 'pages/_index';
+@import 'pages/_a51.scss';
+@import 'pages/_p32.scss';
+@import 'pages/_p31.scss';
+@import 'pages/_p33.scss';
+@import 'pages/_p34.scss';
+@import 'pages/landing';
+@import 'pages/_a53.scss';
+@import 'pages/_a54.scss';
+@import 'pages/_a56.scss';
+
+//media
+@import 'helpers/_media.scss';  

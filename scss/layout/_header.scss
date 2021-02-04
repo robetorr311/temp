@@ -1,0 +1,115 @@
+ /* ------------------ HEADER -------------------- */
+ .header {
+ 	position: absolute;
+ 	z-index: 9999;
+ 	width: 100%;
+ 	top: 54px;
+ 	
+ 	.btn-secondary.dropdown-toggle {
+ 		background: none;
+ 		border: 0;
+ 	}
+ 	.row {
+ 		align-items: center;
+ 	}
+ 	.header__logo {
+ 		text-align: right;
+ 		padding-right: 50px;
+ 		svg {
+ 			max-width: 242px;
+ 		}
+ 	}
+ 	.header__logo_text {
+ 		span {
+ 			color: rgba(255,255,255,0.5);
+ 			font-size: 14px;
+ 			display: block;
+ 			margin-bottom: 15px;
+ 		}
+ 	}
+ 	.myTotemsPageHeader_row {
+ 		max-width: 940px;
+ 		margin: auto;
+ 		padding-top: 21px;
+ 		align-items: flex-start;
+
+ 		.nav {
+ 			margin-top: 32px;
+
+ 			.navbar-nav {
+ 				padding-right: 0;
+ 				li {
+ 					margin-right: 20px;
+ 				}
+ 			}
+ 		}
+ 		.header__logo , .header__logo_text {
+ 			text-align: left;
+ 			padding: 0;
+ 			display: inline-block;
+ 			vertical-align: middle;
+ 		}
+ 		.header__logo_text {
+ 			margin-left: 30px;
+ 			span {
+ 				margin-bottom: 0;
+ 			}
+ 			svg {
+ 				max-width: 152px;
+ 			}
+ 		}
+ 	} 	
+ 	&.stickyHeader {
+ 		position: fixed;
+ 		background-color: #2d243f;
+ 		box-shadow: 0 0 24px rgba(0, 0, 0, 0.64);
+ 		z-index: 9999;
+ 		left: 0;
+ 		top: 0!important;
+ 		right: 0;
+ 		width: 100%;
+ 		.header__logo {
+ 			text-align: center;
+ 			padding: 0;
+ 			&>* {
+ 				display: inline-block;
+ 				vertical-align: middle;
+ 			}
+ 		}
+ 		.stickyHeader__content {
+ 			align-items: center;
+ 			padding: 25px 0;
+ 			margin: auto;
+ 			max-width: 940px;
+ 			.btn--back {
+ 				padding: 0;
+ 				background: none;
+ 				color: white;
+ 				font-family: "MyriadPro",serif;
+ 				font-size: 16px;
+ 				font-weight: 400;
+ 				line-height: 35px;
+ 				&>* {
+ 					display: inline-block;
+ 					vertical-align: middle;
+ 					color: #a49da9;
+
+ 				}
+ 				.fa {
+ 					font-size: 25px;
+ 					margin-right: 8px;
+ 				}
+ 			} 
+ 			.btn--sm {
+ 				float: right;
+ 			}
+ 			.preview__title {
+ 				font-size: 24px;
+ 				font-weight: 300;
+ 				color: #fff;
+ 				text-align: center;
+ 				display: block;
+ 			}
+ 		}
+ 	}
+ }

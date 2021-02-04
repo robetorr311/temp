@@ -1,0 +1,263 @@
+#top-screen.top-screen__TotemFor {
+	padding-bottom: 60px;
+	background: url(../img/a56-bg.png) no-repeat,linear-gradient(to right, #423a53, #683041);
+	margin-bottom: 0;
+	background-size: cover;
+	.section__title {
+		span {
+			color: #cccccc;
+			font-size: 24px;
+		}
+	}
+	.totem-preview {
+		max-width: 940px;
+		margin: auto auto 60px;
+		border-radius: 10px;
+		background-color: #531a2c;
+		padding: 20px 30px;
+		.totem-preview__content {
+			align-items: center;
+			.btn--back {
+				padding: 0;
+				background: none;
+				color: white;
+				font-family: "MyriadPro",serif;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 35px;
+				&>* {
+					display: inline-block;
+					vertical-align: middle;
+					color: #a49da9;
+
+				}
+				.fa {
+					font-size: 25px;
+					margin-right: 8px;
+				}
+			} 
+			.btn--big {
+				float: right;
+			}
+			.preview__title {
+				font-size: 24px;
+				font-weight: 300;
+				color: #fff;
+				text-align: center;
+				display: block;
+			}
+		}
+	}
+}
+
+
+
+.totem__about {
+	padding-bottom: 46px; 
+	padding-top: 70px;
+	.row {
+		align-items: center;
+	}
+	.totem__about_img-wrap {
+		.totem__about_img {
+			img {
+				margin: auto;
+			}
+			.gaz {
+				font-family: $base-font-serif;
+				font-size: 50px;
+				display: block;
+				margin: 15px auto;
+				text-align: center;
+			}
+		}
+		.totem__about_img-text {
+			span {
+				display: block; 
+				text-align: center;
+				font-size: 24px;
+				&.name {
+					text-transform: uppercase;
+					color: #161616;
+					font-weight: bold;
+					margin-bottom: 30px;
+				}
+				&.descr {
+					font-weight: 300;
+					font-style: italic;
+					color: #000000; 
+				}
+			}
+		}
+	}
+
+	.totem__about_descr-wrap {
+		position: relative;
+		padding-left: 117px;
+		&:before {
+			content: url(../img/big-shadow.png);
+			width: 117px;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: -1;
+		}
+		.totem__about_descr_top {
+			margin-bottom: 41px;
+			&>* {
+				display: inline-block;
+				vertical-align: middle;
+			}
+			.totem__about_descr_top-img {
+				margin-right: 25px;
+				width: 73px;
+				height: 73px;
+				overflow: hidden;
+				border-radius: 50%;
+			}
+			.totem__about_descr_top-text {
+				span {
+					display: block;
+					&.name {
+						font-size: 24px;
+						font-weight: 500;
+						color: #000000;
+					}
+					&.date {
+						font-size: 14px;
+						color: #999999;
+					}
+				}
+			}
+		}
+		.totem__about_descr_content {
+			p {
+				.xx {
+					margin-top: 40px;
+					display: block;
+				}
+			}
+		}
+	}
+
+	.totem__btn_social {
+		margin-top: 80px;
+		margin-bottom: 30px;
+		text-align: center;
+		.btn{
+			min-width: 180px;
+		}
+		span {
+			display: block;
+			font-size: 16.1px;
+			font-family: $base-font-serif;
+			margin-top: 10px;
+			color: #999999;
+		}
+	}
+
+}
+#modal56{
+	.modal-links{
+		li{
+			border-top: 1px solid #cdcdcd;
+			font-family: "Myriad Pro";
+			font-size: 24px;
+			line-height: 35px;
+			font-weight: 400;
+			color: black;
+			text-align: left;
+			min-height: 75px;
+			display: flex;
+			align-items: center;
+
+
+			&:last-child{
+				border-bottom: 1px solid #cdcdcd;
+				justify-content: space-between;
+				.btn{
+					padding: 5px 15px !important;
+					min-width: unset;
+				}
+			}
+			.link-container{
+				display: flex;
+				align-items: center;
+			}
+			.fa{
+				margin-right: 25px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height:44px;
+				width: 44px;
+
+				&.fa-facebook{
+					border-radius: 50%;
+					background-color: #3d5b94;
+					color: white;
+					text-align: center;
+					font-size: 24px;
+				}
+			}
+			.fa-envelope{
+				color: #999999;
+				font-size: 34px;
+			}
+			.fa-link{
+				color: #94395a;
+				font-size: 32px;
+				transform: scaleX(-1);
+			}
+		}
+	}
+	.modal-header{
+		.close{
+			position: relative;
+			span{
+				&:before{
+					transform: rotate(45deg);
+					content: ' ';
+					display: inline-block;
+					height: 3px;
+					width: 17px;
+					background: #423a53;
+					position: absolute;
+					right: calc(50% - 9px);
+					top: calc(50% - 2px);
+				}
+				&:after{
+					transform: rotate(-45deg);
+					content: ' ';
+					display: inline-block;
+					height: 3px;
+					width: 17px;
+					background: #423a53;
+					position: absolute;
+					right: calc(50% - 9px);
+					top: calc(50% - 2px);
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 767px) {
+		.modal-dialog{
+			max-width: 100vw;
+			width: 100vw;
+			margin: 0;
+			height: 100vh;
+			.modal-header{
+				.modal-title{
+					font-size: 20px;
+				}
+			}
+			.modal-body h4{
+				font-size: 20px;
+			}
+		}
+		.modal-links li{
+			font-size: 20px;
+		}
+	}
+}

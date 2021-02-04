@@ -1,0 +1,431 @@
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px){
+	.design-item {
+		max-width: 150px;
+	}
+	.design-section .design-bar .design-item--center {
+		top: 0;
+	}
+	.header .myTotemsPageHeader_row  .nav .navbar-nav li {
+		margin-right: 15px;
+	}
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px){
+	#top-screen , #top-screen.top-screen__home , #top-screen.top-screen__TotemFor , #top-screen.top-screen__send {
+		margin-bottom: 0;
+		min-height: 100%;
+	}
+	#top-screen.top-screen__home , #top-screen.top-screen__TotemFor , #top-screen.top-screen__my-profile {
+		padding-bottom: 60px;
+	}
+	.app-logo_top {
+		svg {
+			max-width: 300px;
+		}
+	}
+	.design-section {
+		height: 100%;
+		margin-bottom: 0;
+		padding: 30px 0;
+		top: 0;
+	}
+	.design-section .design-bar {
+		top: 0;
+		height: auto;
+		justify-content: center;
+	}
+	.promo-section .row>*:first-child .promo-item {
+		border-right: 0;
+	}
+	.promo-section .promo-item {
+		text-align: center;
+		&>* {
+			flex: 0 0 100%;
+		}
+		.promo-img {
+			min-height: 160px;
+			img {
+				margin: 0 auto;
+			}
+		}
+		.promo-content {
+			max-width: 100%;
+		}
+
+	}
+	.footer {
+		padding-bottom: 30px;
+		.footer__inner {
+			justify-content: center;
+			&>* {
+				margin-right: 0!important;
+			}
+			.footer__logo {
+				margin-right: 20px!important;
+			}
+			.footer__copyright {
+				text-align: center;
+			}
+		}	
+	}
+	.totem__about .totem__about_descr-wrap {
+		padding-left: 80px;
+	}
+}
+
+
+
+	/* Small Devices, Tablets */
+	@media only screen and (max-width : 768px){
+		.header {
+
+			top: 20px;
+			.nav {
+				display: none;
+			}
+		}
+		#top-screen {
+			.app-home .app-logo .app-logo_bottom {
+				margin-top: 0;
+			}
+			.app-home .app-content {
+				margin-top: 30px;
+				max-width: 100%;
+				text-align: center;
+				h1 {
+					text-align: center;
+					margin-bottom: 30px;
+				}
+			}
+		} 
+
+		.promo-section {
+			padding: 50px 0;
+		}
+
+		.modal .modal-dialog {
+			max-width: 100%;
+			margin: 35px;
+		}
+		.modal .modal-body .btn {
+			padding: 15px!important;
+			max-width: 100%;
+			font-size: 14px;
+		}
+		#connectionModal .modal-body #sign-in-facebook:before {
+			content: none;
+		}
+		.modal .modal-dialog .modal-content .modal-form , #connectionModal .modal-footer   {
+			padding: 30px 30px 20px!important;
+		}
+		#connectionModal .modal-form {
+			padding: 0!important;
+		}
+		#connectionModal .modal-footer .form-group {
+			text-align: center;
+		}
+		.modal .modal-body, .modal .modal-footer {
+			border: 0;
+			padding: 0;
+			justify-content: center;
+		}
+		.modal .btn--big {
+			width: 100%;
+			margin: 0 auto;
+			display: block;
+			font-size: 14px;
+			padding: 15px 50px;
+		}
+		.header .myTotemsPageHeader_row .header__logo, .header .myTotemsPageHeader_row .header__logo_text {
+			text-align: center;
+			display: block;
+			margin-bottom: 15px;
+			margin-left: 0;
+		}
+
+		.header .myTotemsPageHeader_row {
+			flex-direction: column-reverse!important;
+		}
+		.my-totems {
+			padding-bottom: 0;
+		}
+		.my-totems__item_img {
+			img {
+				margin: auto;
+			}
+		}
+		.my-totems .my-totems__list .my-totems__item .my-totems__item_edit .btn--delete {
+			text-align: left;
+			margin-bottom: 20px;
+		}
+		.my-totems .my-totems__list .my-totems__item {
+			margin-left: 0;
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+
+		.totem__about_img-wrap {
+			margin-bottom: 50px;
+		}
+		.totem__about .totem__about_descr-wrap .totem__about_descr_top , .totem__about_descr_content {
+			text-align: center;
+		}
+		.totem__about .totem__btn_social {
+			margin-top: 60px;
+		}
+		.totem__about .totem__about_descr-wrap {
+			padding: 60px;
+		}
+		#top-screen.top-screen__comment .leave-message .leave-message__content {
+			//padding: 40px;
+		}
+		#top-screen.top-screen__comment .comment-tabs .tab-content {
+			padding: 50px;
+		}
+		.design-section {
+			display: none;
+		}
+		#top-screen.top-screen__TotemFor .totem-preview .totem-preview__content .btn--big , .header.stickyHeader .stickyHeader__content .btn--sm {
+			float: none;
+			margin: 20px auto 0;
+			display: block;
+			width: 100%;
+			max-width: 200px;
+		}
+		.header.stickyHeader .stickyHeader__content .btn--sm {
+			float: right;
+			margin: auto;
+		}
+		.my-totems .my-totems__list .my-totems__item .my-totems__item_info {
+			margin-top: 0;
+		}
+		.my-totems .my-totems__list .my-totems__item {
+			padding: 10px;
+		}
+	}
+
+
+
+
+
+
+	/* Custom, iPhone Retina */
+	@media only screen and (max-width : 600px){
+		.footer .footer__inner .footer-nav ul {
+			flex-direction: column;
+		}
+		.footer .footer__inner>* {
+			flex: 0 0 100%;
+		}
+		.footer .footer__inner .footer__logo {
+			margin-right: 0 !important;
+			text-align: center;
+		}
+		.footer .footer__inner .footer-nav ul li {
+			margin-right: 0;
+			padding-left: 0;
+			text-align: center;
+			margin-bottom: 15px;
+			a {
+				font-size: 18px;
+			}
+			&:before {
+				content: none;
+			}
+		}
+	}
+
+	@media only screen and (max-width : 576px){ 
+		.header .header__logo , .header__logo_text {
+			text-align: center;
+			padding-right: 0;
+		}
+
+
+		.bottom-btns .btn--cancel, .bottom-btns .btn--back {
+			display: block;
+			text-align: left;
+		}
+		#top-screen.top-screen__comment .comment-tabs .nav .nav-link {
+			font-size: 14px;
+		}
+		#top-screen.top-screen__comment .comment-tabs .tab-content p {
+			font-size: 16px;
+		}
+		#top-screen.top-screen__comment .leave-message .leave-message__header h4 , #top-screen.top-screen__comment .leave-message .leave-message__content textarea{
+			font-size: 18px;
+		}
+		.header .header__logo svg {
+			max-width: 150px;
+			height: 150px;
+		}
+		.header.stickyHeader .header__logo {
+			svg {
+				height: auto;
+			}
+		}
+		h2 {
+			font-size: 32px;
+		}
+		.totem__logo {
+			padding-top: 0;
+		}
+
+	}
+
+
+
+		/* Extra Small Devices, Phones */
+		@media only screen and (max-width : 480px){
+			h3 {
+				font-size: 25px;
+			}
+			
+			#top-screen .app-home .app-content h1 {
+				font-size: 26px;
+			}
+			.btn--big {
+				font-size: 16px;
+				padding: 20px;
+			}
+			.btn--sm {
+				font-size: 14px;
+			}
+			p {
+				font-size: 16px;
+			}
+			.app-logo_top svg {
+				max-width: 150px;
+				height: 150px;
+			}
+			#top-screen.top-screen__TotemFor .totem-preview .totem-preview__content .btn--big {
+				padding: 10px 20px;
+			}
+			.btn--sm {
+				padding: 15px;
+			}
+			.modal .modal-header .modal-title {
+				font-size: 22px;
+			}
+			.modal .modal-body h4 {
+				font-size: 20px;
+				margin-bottom: 20px;
+			}
+			#connectionModal .modal-footer .modal-footer-title h4 {
+				font-size: 20px;
+			}
+			#connectionModal .modal-footer .modal-footer-title span {
+				font-size: 14px;
+			}
+			input , .checkbox input[type="checkbox"]+label {
+				font-size: 14px!important;
+			}
+			.modal .modal-header .close {
+				padding: 0.15em;
+				width: 30px;
+				height: 30px;
+				span {
+					font-size: 23px;
+				}
+			}
+			.modal .btn-link {
+				margin-top: 15px;
+				margin-bottom: 15px;
+			}
+			.modal .modal-header .back svg {
+				max-width: 15px;
+			}
+			.bottom-btns {
+				flex-direction: column;
+				text-align: center;
+			}
+
+			.totem__about .totem__about_descr-wrap {
+				padding: 20px;
+			}
+			.bottom-btns .btn--cancel {
+				margin-bottom: 15px;
+			} 
+			#top-screen.top-screen__comment .totem-images {
+				flex-direction: row;
+				.totem-images__item {
+					margin-right: 0;
+					margin-bottom: 30px;
+				}
+				img {
+					margin: auto;
+				}
+			}
+			.header .row {
+				flex-direction: column;
+			}
+			.header.stickyHeader .row {
+				flex-direction: row;
+			}
+
+		}
+
+
+		/* Custom, iPhone Retina */
+		@media only screen and (max-width : 320px){
+			/**/
+		}
+
+		/*==========  Mobile First  ==========*/
+
+		/* Custom, iPhone Retina */
+		@media only screen and (min-width : 320px){
+			/**/
+		}
+
+		/* Extra Small Devices, Phones */
+		@media only screen and (min-width : 480px){
+			/**/
+		}
+
+		/* Small Devices, Tablets */
+		@media only screen and (min-width : 768px){
+			.menu-toggle , #mobile-menu.opening  {
+				display: none;
+			}
+			.header .nav {
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+			}
+			.app-logo_top {
+				margin-bottom: 0;
+			}
+			.header .myTotemsPageHeader_row {
+				flex-direction: row;
+			}
+			.design-section {
+				display: block;
+			}
+			.carousel-wrapper #image-carousel .owl-nav {
+				display: block;
+				margin: 0;
+			}
+			.my-totems .my-totems__list .my-totems__item .my-totems__item_info {
+				margin-top: 41px;
+			}
+		}
+		/* Medium Devices, Desktops */
+		@media only screen and (min-width : 992px){
+			/**/
+		}
+
+
+		/* Large Devices, Wide Screens */
+		@media only screen and (min-width : 1200px) {
+			/**/
+		}
+
+		@media only screen and (min-width : 1600px) {
+			/**/
+		}

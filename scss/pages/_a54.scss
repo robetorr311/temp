@@ -1,0 +1,350 @@
+#top-screen.top-screen__comment {
+	background: url(../img/comment-bg.png) top no-repeat,linear-gradient(to right, #39314a, #813846);
+	.comment-section {
+		background-color: rgba(0,0,0,0.6);
+		-webkit-box-shadow: 0.5px 0.9px 109px 0 rgba(0,0,0,0.16);
+		box-shadow: 0.5px 0.9px 109px 0 rgba(0,0,0,0.16);
+		color: #fff;
+		.comment-title  {
+			padding: 55px 0;
+			background: #5e293c;
+			h3 {
+				color: white;
+				font-size: 40px;
+				font-weight: bold;
+				display: block;
+				line-height: 44px;
+				font-family: "Ubuntu";
+			}
+			span {
+				color: #a8a8a8;
+				font-size: 30px;
+				font-weight: 400;
+				display: block;
+				line-height: 44px;
+				font-family: "Ubuntu";
+			}
+		}
+	}
+	.totem-images {
+		background: #5e293c;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding-bottom: 60px;
+		.totem-images__item {
+			margin-right: 23px;
+		}
+		img {
+			max-width: 240px;
+		}
+	}
+	.comment-tabs {
+		background-color: #efefef;
+		padding: 60px 0;
+
+		.comments-header{
+			margin-bottom: 50px;
+
+			.comments-headline{
+				font-size: 24px;
+				line-height: 1;
+				font-family: "Myriad Pro";
+				font-weight: bold;
+				color: black;
+				text-align: center;
+				margin-bottom: 15px;
+			}
+			.sub-headline{
+				font-size: 18px;
+				line-height: 1;
+				font-family: "Myriad Pro";
+				font-weight: normal;
+				color: black;
+				text-align: center;
+			}
+		}
+		.mobile-select{
+			display: none;
+			position: relative;
+		}
+		.nav {
+			justify-content: space-between;
+			.nav-item {
+				width: 33%;
+			}
+			.nav-link {
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 1;
+				text-align: center;
+				color: #000;
+				border: 0;
+				border-radius: 0;
+				padding: 25px 0;
+				font-family: "Ubuntu";
+				&.active {
+					background: #fff;
+					color: #000;
+					font-weight: bold;
+				}
+			}
+		}
+		.tab-content {
+			background-color: white;
+			padding: 90px;
+			p {
+				font-weight: 300;
+				line-height: 1.44;
+				letter-spacing: normal;
+				color: #000000;
+			}
+		}
+		.video-text{
+			font-family: "Ubuntu";
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 35px;
+			color: #000;
+			display: flex;
+			align-items: center;
+			margin-top: 60px;
+		}
+		.video-container{
+			margin-top: 60px;
+			a{
+				display: inline-block;
+				img{
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
+	.leave-message {
+		background-color: #ffffff;
+		padding: 60px 0;
+
+		.leave-message__header {
+			padding: 0 0 20px;
+			h4 {
+				font-family: "Ubuntu";
+				font-weight: bold;
+				font-size: 24px;
+				line-height: 35px;
+				color: #000000;
+			}
+		}
+		.leave-message__content {
+			border: 1px solid #cdcdcd;
+			position: relative;
+
+			&:before{
+				content: "\f040";
+				font-family: "FontAwesome";
+				font-size: 50px;
+				color: black;
+				position: absolute;
+				left: -65px;
+				top: 0;
+				transform: scaleX(-1);
+			}
+			textarea {
+				width: 100%;
+				min-height: 180px;
+				resize: none;
+				overflow-y: auto;
+				font-size: 20px;
+				color: #000;
+				padding: 40px 60px;
+				border: 0;
+
+
+
+				&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+					font-size: 18px;
+					line-height: 26px;
+					font-family: "Myriad Pro";
+					font-weight: normal;
+					color: #000000;
+				}
+				&::-moz-placeholder { /* Firefox 19+ */
+					font-size: 18px;
+					line-height: 26px;
+					font-family: "Myriad Pro";
+					font-weight: normal;
+					color: #000000;
+				}
+				&:-ms-input-placeholder { /* IE 10+ */
+					font-size: 18px;
+					line-height: 26px;
+					font-family: "Myriad Pro";
+					font-weight: normal;
+					color: #000000;
+				}
+				&:-moz-placeholder { /* Firefox 18- */
+					font-size: 18px;
+					line-height: 26px;
+					font-family: "Myriad Pro";
+					font-weight: normal;
+					color: #000000;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 767px) {
+		.leave-message {
+			.leave-message__content{
+				padding: 36px 20px;
+				&:before{
+					display: none;
+				}
+				textarea{
+					padding: 0;
+					overflow: hidden;
+				}
+			}
+		}
+		.video-text{
+			justify-content: center;
+		}
+		.totem-images{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			flex-direction: row;
+			img {
+				&:first-child{
+					margin-right: 15px;
+				}
+			}
+		}
+		.comment-section {
+			.comment-title  {
+				h3 {
+					font-size: 30px;
+				}
+				span {
+					font-size: 20px;
+				}
+			}
+			.nav{
+				display: none;
+			}
+			.mobile-select{
+				display: block;
+				&:before{
+					position: absolute;
+					width: 70px;
+					height: 70px;
+					border-radius: 50%;
+					background-color: #ec4d53;
+					top: 20px;
+					z-index: 9999;
+					right: 27px;
+					content: '';
+					pointer-events: none;
+				}
+				&:after{
+					width: 0;
+					height: 0;
+					border-right: 10px solid transparent;
+					border-bottom: 0;
+					border-left: 10px solid transparent;
+					border-top: 15px solid #fff;
+					content: '';
+					pointer-events: none;
+					position: absolute;
+					top: 48px;
+					right: 51px;
+					z-index: 9999;
+				}
+				#mySelect {
+					border-radius: 55px;
+					width: 100%;
+					height: 110px;
+					padding: 0 80px;
+					font-size: 30px;
+					font-family: 'Ubuntu';
+					font-weight: bold;
+					line-height: 35px;
+					color: #000;
+					border: 0;
+					-webkit-appearance: none;
+					-moz-appearance: none;
+				}
+			}
+			.tab-content{
+				margin-top: 80px;
+				position: relative;
+				&:before{
+					content: '';
+					width: 0;
+					height: 0;
+					border-left: 50px solid transparent;
+					border-right: 50px solid transparent;
+					top: -50px;
+					position: absolute;
+					left: 55px;
+					border-bottom: 50px solid white;
+				}
+			}
+		}
+		.comment-tabs .video-text {
+			margin-top: 25px;
+		}
+	}
+}
+#video-modal{
+	z-index: 999999;
+	.modal-dialog{
+		.modal-header{
+			padding: 25px 25px 25px 65px;
+			.close{
+				background: none;
+				span{
+					color: white;
+				}
+			}
+		}
+		.modal-form{
+			h5{
+				font-family: "Ubuntu", sans-serif;
+				font-size: 24px;
+				color: #000000;
+				line-height: 1.25;
+				font-weight: 400;
+				margin-bottom: 50px;
+			}
+			h6{
+				font-family: "Ubuntu", sans-serif;
+				font-size: 16px;
+				color: #666666;
+				line-height: 24px;
+				font-weight: 400;
+				margin-bottom: 50px;
+			}
+			.modal-footer{
+				justify-content: center;
+
+				a{
+					margin-bottom: 20px;
+				}
+			}
+		}
+
+		@media screen and (max-width: 767px){
+			max-width: 100vw;
+			width: 100vw;
+			margin: 0;
+			height: 100vh;
+			.modal-form{
+				padding: 30px 15px 20px !important;
+			}
+		}
+	}
+}
